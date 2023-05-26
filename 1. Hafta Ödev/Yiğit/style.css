@@ -1,0 +1,118 @@
+/* Bu satır ne yapıyor? */
+/* Yıldız işareti(*) tüm html sayfasına etki ediyor. 
+İçine yazdığın box-sizing özelliği araştırdığında
+https://www.w3schools.com/css/css3_box-sizing.asp Buradan bakabilirsin.
+
+Bu özellik sayesinde, bir elementin içindeki padding ve border değerlerini
+genişlik ve yükseklik değerlerinden çıkararak, elementin içindeki içeriğin
+genişliğini ve yüksekliğini hesaplamasını sağlıyoruz.
+Örneğin; bir div elementi oluşturup içine bir resim eklediğimizi düşünelim.
+Resmin genişliği 100px, yüksekliği 100px olsun. Bu div elementinin içine
+padding değeri olarak 10px verdiğimizi düşünelim. Bu durumda div elementinin
+genişliği 100px, yüksekliği 100px olacak. Ancak içindeki resim 100px genişliğinde
+ve 100px yüksekliğinde olacağı için, padding değerleri nedeniyle resim
+div elementinin içine sığmayacak. Bu durumda, div elementinin içindeki
+içeriğin genişliğini ve yüksekliğini hesaplaması için box-sizing özelliğini
+kullanıyoruz. Bu özelliği kullanmak için, önce tüm elementlere etki etmesini
+istediğimiz için yıldız işareti kullanıyoruz. Daha sonra box-sizing özelliğini
+border-box olarak belirtiyoruz. Bu özellik sayesinde, bir elementin içindeki
+padding ve border değerlerini genişlik ve yükseklik değerlerinden çıkararak,
+elementin içindeki içeriğin genişliğini ve yüksekliğini hesaplamasını sağlıyoruz.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+Bazı elementleri yorum olarak değiştirdim. Bunun sebebi, yolladığım ödevde
+bu elementlerin doğru kullanılmadığını gördüğüm için yorum olarak değiştirdim.
+Ekstradan bir şeyler ekledim. Mesela space-around. Bu özellik sayesinde,
+flexbox içindeki elementler arasında boşluk bırakıyoruz. Bu özelliği kullanmak
+için, display: flex; özelliğini kullanıyoruz. Daha sonra, space-around özelliğini
+kullanıyoruz. Bu özellik sayesinde, flexbox içindeki elementler arasında boşluk
+bırakıyoruz. 
+
+Bu ödevin amacı o görüntüyü tam olarak oluşturmak değil. Bu ödevin amacı,
+dersin sonuna doğru bahsettiğim gibi flex ve onunla kullanılan özellikleri
+kullanmanızı sağlamak. Ve araştırmanızı sağlamak.
+*/
+
+/*
+Sonuç olarak istenilen görüntüyü oluşturmuşsun. Her yiğidin yoğurt yiğişi 
+farklıdır. Benim yaptığım gibi yapmak zorunda değilsin. Kendi yaptığın gibi
+yapabilirsin. Ama yaptığın şeyin mantığını anlamalısın. 
+*/
+
+.dıskutu {
+  /* width: 100px;
+  height: 100px; */
+  width: 600px;
+  height: 300px;
+  background-color: #b31f1f;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* margin-left: -250px;
+  margin-top: -150px; */
+}
+
+.kutu1 {
+  /* width: 175px;
+  height: 175px; */
+  width: 200px;
+  height: 200px;
+  background-color: #ad4c4c;
+  border: 10px solid;
+  /* display: inline-block; */
+  /* margin-left: 40px;
+  margin-top: 35px;
+  margin-right: 70px;
+  vertical-align: top; */
+}
+.kutu2 {
+  /* width: 175px;
+  height: 175px; */
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: solid;
+  display: inline-block;
+  /* border: 10px solid; */
+  border: none;
+  border-radius: 20px;
+  /* border-color: white;
+  margin-right: 10px;
+  margin-top: 35px;
+  vertical-align: top; */
+  position: relative;
+}
+/* .kutu3 {
+  width: 550px;
+  height: 275px;
+  background-color: #b31f1f;
+  border-radius: 20px;
+} */
+.yazi {
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  position: absolute;
+  top: 11px;
+  left: 58px;
+  color: #000000;
+  width: 82px;
+  height: 51px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  font-feature-settings: "case" on;
+}
+.quotation {
+  font-style: italic;
+}

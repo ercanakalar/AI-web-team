@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  padding: 20px;
+  background-color: rgb(221, 214, 214);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.circle-1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(41, 5, 17);
+  margin: 40px;
+  position: absolute;
+}
+.circle-2 {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(126, 5, 43);
+  border-radius: 30px;
+  margin: 30px;
+  position: absolute;
+}
+.circle-3 {
+  width: 80px;
+  height: 80px;
+  background-color: palevioletred;
+  border-radius: 40px;
+  position: relative;
+}
+.searchButton {
+  background-color: rgb(221, 214, 214);
+  height: 57px;
+  width: 377px;
+  display: flex;
+  position: relative;
+}
+.searchButton input {
+  padding: 0 35px 0 20px;
+  font-size: medium;
+  border: none;
+  background: rgb(196, 189, 189);
+  border-radius: 10px;
+  width: 100%;
+}
+.searchButton button {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: rgb(196, 189, 189);
+  border: none;
+  cursor: pointer;
+}
+.searchButton input:focus {
+  outline-color: rgb(230, 131, 230);
+}
+.searchButton button:hover {
+  background-color: rgb(230, 133, 230);
+}
+.signinbuttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.signin {
+  height: 50px;
+  width: 80px;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(44, 41, 41);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+}
+.signin:hover {
+  background-color: palevioletred;
+}
+.login {
+  height: 50px;
+  width: 80px;
+  padding: 15px;
+  background-color: rgb(44, 41, 41);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: aliceblue;
+  cursor: pointer;
+}
+.login:hover {
+  background-color: rgb(204, 53, 103);
+}
+a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 4px;
+    height: 50px;
+  }
+  .logo {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .circle-1 {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+  }
+  .circle-2 {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+  .circle-3 {
+    width: 30px;
+    height: 30px;
+  }
+  .searchButton {
+    height: 30px;
+    width: 100px;
+    margin-right: 10px;
+  }
+  .signinbuttons {
+    height: inherit;
+    gap: 12px;
+    margin-right: 10px;
+  }
+  .searchButton input {
+    padding: 0 26px 0 10px;
+    font-size: small;
+    height: 30px;
+    width: 100px;
+  }
+  .searchButton button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .signin {
+    height: 25px;
+    width: 40px;
+    margin-right: -10px;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: xx-small;
+  }
+  .login {
+    height: 25px;
+    width: 40px;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: xx-small;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 20px;
+  }
+  .searchButton {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .searchButton input {
+    width: 350px;
+    font-size: larger;
+  }
+  .searchButton button {
+    font-size: larger;
+  }
+}

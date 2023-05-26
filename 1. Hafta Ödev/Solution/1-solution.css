@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  background-color: #a22222;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.box1 {
+  display: flex;
+  background: #874444;
+  border: 10px solid #000000;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+}
+.box2-text {
+  position: absolute;
+  display: inline;
+  top: 11px;
+  left: 58px;
+  color: #000000;
+  width: 82px;
+  height: 51px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  font-feature-settings: "case" on;
+}
+.quotation {
+  font-style: italic;
+  opacity: 0.7;
+}

@@ -1,0 +1,102 @@
+.inputArea {
+  border: none;
+  border-bottom: 6px solid #ccc;
+}
+.inputArea:focus {
+  outline: 2px solid red;
+  border: none;
+}
+
+.inputArea:active::after {
+  outline: 2px solid blue;
+  border: none;
+  content: "+";
+}
+
+/*.text {
+  font-size: 20px;
+  font-family: "Inter", "sans-serif";
+  font-style: italic;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: underline;
+  line-height: 1;
+  letter-spacing: 1px;
+} */
+
+/* li {
+  list-style: none;
+}
+li::before {
+  content: "+";
+}
+a {
+  text-decoration: none;
+}
+ul > li {
+  border-top: 5px solid red;
+} */
+
+/* table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
+
+/* .box-container {
+  display: flex;
+  height: 300px;
+  width: 600px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  height: 50%;
+  width: 100px;
+  background-color: blue;
+}
+.box2 {
+  height: 50%;
+  width: 100px;
+
+  background-color: green;
+}
+.box3 {
+  height: 50%;
+  width: 100px;
+
+  background-color: yellow;
+} */
+/* 
+.checkboxArea:checked {
+  border: none;
+  outline: 2px solid deeppink;
+}
+a {
+  border: none;
+  outline: 2px solid deeppink;
+}
+a:visited {
+  border: none;
+  outline: 2px solid blue;
+} */
+
+/* p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+} */
+/* .submitButton {
+  cursor: pointer;
+}
+
+a {
+  background-color: powderblue;
+  transition: background-color 1s;
+}
+
+a:hover {
+  background-color: gold;
+} */

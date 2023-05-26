@@ -1,0 +1,99 @@
+/* Buradaki tüm sayfa için bilgi veriyoruz. margini sıfır yapıp 
+box-sizing vererek sayfanın genel ayarlarını yaptık.
+kaldırıp tekrar eklediğinde sayfanın her yerindeki boşluğun kalktığını göreceksin.
+  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.daire1 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(221, 156, 156);
+  border-radius: 50%;
+}
+.daire2 {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(214, 76, 76);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+.daire3 {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(214, 10, 10);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+/* üst kısımda kırmızı daireleri yaptım. */
+.header {
+  padding: 20px 70px 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 237, 237);
+}
+/*üst kısımda header kısmının genel ayarlarını yaptım. */
+input[type="text"] {
+  /* margin: 0px; */
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(221, 220, 220, 0.932);
+  width: 90%;
+}
+.searchbtn1 {
+  /* margin: 10px; */
+  /* padding: 2px; */
+  position: relative;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(221, 220, 220, 0.932);
+  /* width: auto; */
+}
+/* Buradaki focus-within kullanarak inputa tıklandığında border rengini değiştirdim.
+Normalde bunu yapmak için inputa focus yapmamız gerekirdi.
+Ama burada inputun içindeki searchbtn1 e focus yaptığımızda inputun border rengi değişiyor.
+Red deneme amaçlıdır.
+*/
+.searchbtn1:focus-within {
+  border: 1px solid red;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.searchbtn {
+  border: none;
+  background-color: rgba(221, 220, 220, 0.932);
+  position: absolute;
+  top: 10px;
+  left: 157px;
+  cursor: pointer;
+}
+.buton1 {
+  background-color: rgba(0, 0, 0, 0.637);
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.section1 {
+  /* width: 1368px; */
+  width: 100%;
+  height: 768px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgb(148, 146, 146);
+  border-color: rgb(148, 146, 146);
+  border: 20px;
+  display: flex;
+}

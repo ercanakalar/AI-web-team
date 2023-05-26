@@ -1,0 +1,135 @@
+body {
+  background-color: #a7a7a7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #eeeeee;
+}
+.logo {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  padding: 20px 70px;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: #df2e2e;
+  opacity: 0.4;
+}
+.rectangle2 {
+  position: absolute;
+  width: 43.64px;
+  height: 43.64px;
+  border-radius: 60px;
+  background-color: #cc2f2f;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle3 {
+  position: absolute;
+  width: 21.82px;
+  height: 21.82px;
+  border-radius: 60px;
+  background-color: #dd3636;
+}
+.searchdiv {
+  display: flex;
+  justify-content: row;
+  flex: none;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 15px;
+}
+.search {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 15px;
+  width: 377px;
+  height: 54px;
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.searchico {
+  position: relative;
+  display: flex;
+  margin-left: -50px;
+  border-radius: 60px;
+  border-color: black;
+  border-style: outset;
+  border-width: 2px;
+  height: 14px;
+  width: 14px;
+  background-color: transparent;
+}
+.searchico2 {
+  position: relative;
+  border-color: black;
+  border-width: 1pt;
+  border-style: outset;
+  transform: rotate(-48.5deg);
+  top: 7px;
+  left: 0px;
+  height: 8px;
+  width: 0px;
+  background-color: transparent;
+}
+.search:focus {
+  outline: none;
+}
+.signcontainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 221px;
+  height: 60px;
+}
+.signin {
+  width: 98.5px;
+  height: 60px;
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  color: white;
+  border-color: transparent;
+  font-size: 16px;
+}
+.signup {
+  width: 98.5px;
+  height: 60px;
+  background-color: #5c5c5c;
+  border-radius: 10px;
+  color: white;
+  border-color: transparent;
+  font-size: 16px;
+}
+.signin:hover {
+  background: linear-gradient(#5c5c5c, #c0c0c0);
+}
+.signup:hover {
+  background: linear-gradient(#5c5c5c, #c0c0c0);
+}

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  height: 20px;
+}
+.text {
+  display: contents;
+}
+.space {
+  margin-bottom: 20px;
+}
+.inputArea {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.inputArea:active,
+.inputArea:focus {
+  border: 1px solid red;
+  outline: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  top: 25px;
+  position: relative;
+}
+.selectContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.ikili {
+  position: relative;
+  top: 50px;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: relative;
+}
+.box-center {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  top: 50%;
+  left: 50%;
+}

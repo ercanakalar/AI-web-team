@@ -1,0 +1,65 @@
+.box1 {
+  height: 300px;
+  width: 600px;
+  /* left: 382px; */
+  /* top: -240px; */
+  border-radius: 20px;
+  padding: 50px;
+  background-color: #a12222;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.box2 {
+  height: 200px;
+  width: 200px;
+  left: 50px;
+  top: 50px;
+  background-color: #874444;
+  border: 10px solid black;
+  margin: 50px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.box3 {
+  /* height: 199.99998807907104px;
+  width: 199.99998807907104px; */
+  height: 200px;
+  width: 200px;
+  left: 350px;
+  top: 50px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  position: absolute;
+  margin: 50px;
+}
+.text {
+  position: absolute;
+  display: flex;
+  /* height: 51px; */
+
+  /* Burada yüksekliğe fit-content eklenmediğinde fazladan yazı yazıldığında
+  görünüşü kayıyor. Bu özellik tamam sen ne yollarsan yolla ben istediğin
+  top noktasından aşağıya doğru kaydırarak gösterceğim diyor. İleryen
+  projelerde bunu kullanacağız. Daha iyi anlarsın.
+  
+  Ellerine sağlık.*/
+  height: fit-content;
+
+  width: 82px;
+  left: 58px;
+  top: 11px;
+  bottom: 138;
+  right: 60;
+  border-radius: null;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  /* font-family: Inter;
+  font-size: 14px;
+  font-weight: 500; */
+  line-height: 17px;
+  color: black;
+}
